@@ -1,4 +1,5 @@
 /*
+	[Easy] 1.Two Sum
 	----------------------------------------------------------------------------------------------------------------
 	Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
@@ -19,7 +20,9 @@
 	1. 루프를 돌면서 맵에 (nums[i], i) 즉 (nums 요소, 인덱스)를 쌍으로 저장
 	2. target-nums[i]이 map에 존재하는지 확인
 	3. 존재한다면 그 값과 nums[i]와의 합이 target이므로 각 인덱스를 저장 후 반환
-
+	
+	- Detail
+	https://woo-dev.tistory.com/72 
 */
 
 #include <unordered_map>
@@ -29,9 +32,6 @@ using namespace std;
 class Solution 
 {
 public:
-	/*
-		https://woo-dev.tistory.com/72
-	*/
 	vector<int> twoSum(vector<int>& nums, int target) 
 	{
 		unordered_map<int, int> myMap;
