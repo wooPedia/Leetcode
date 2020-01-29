@@ -38,8 +38,7 @@ class Solution {
 public:
     bool isValid(string s) {
         /*
-            스택을 이용하여 문자열의 크기만큼 루프를 돕니다.
-            루프를 돌면서 각 문자를 스택에 push합니다.
+            https://woo-dev.tistory.com/73
         */
 
         size_t sSize = s.size();
