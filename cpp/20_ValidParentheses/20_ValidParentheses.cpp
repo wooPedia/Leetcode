@@ -1,4 +1,6 @@
 /*
+    [Easy] 20.Valid Parentheses
+    -----------------------------------------------------------------------------------------------------------------------
     Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
     An input string is valid if:
@@ -27,6 +29,10 @@
     Example 5:
     Input: "{[]}"
     Output: true
+    -----------------------------------------------------------------------------------------------------------------------
+    
+    - Detail
+    https://woo-dev.tistory.com/73
 */
 
 #include <string>
@@ -34,12 +40,11 @@
 
 using namespace std;
 
-class Solution {
+class Solution 
+{
 public:
-    bool isValid(string s) {
-        /*
-            https://woo-dev.tistory.com/73
-        */
+    bool isValid(string s) 
+    {
 
         size_t sSize = s.size();
         if (sSize == 0)
