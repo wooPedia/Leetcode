@@ -15,8 +15,9 @@
     *     ListNode *next;
     *     ListNode(int x) : val(x), next(NULL) {}
     * };
-
-
+    
+    - Detail
+    https://woo-dev.tistory.com/74
  */
 class Solution 
 {
