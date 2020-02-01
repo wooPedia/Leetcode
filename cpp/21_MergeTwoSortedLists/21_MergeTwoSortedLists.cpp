@@ -16,6 +16,7 @@
     *     ListNode(int x) : val(x), next(NULL) {}
     * };
 
+
  */
 class Solution 
 {
@@ -39,22 +40,22 @@ public:
         bool bFirst = true;
         while (firstList != NULL && secondList != NULL)
         {
-            // °ªÀÌ ÀÛÀº ³ëµå¸¦ °í¸¨´Ï´Ù.
+            // ê°’ì´ ìž‘ì€ ë…¸ë“œë¥¼ ê³ ë¦…ë‹ˆë‹¤.
             tempList = (firstList->val > secondList->val) ? secondList : firstList;
             bFirst = (tempList == firstList) ? true : false;
 
-            // ÇöÀç ³ëµåÀÇ next ³ëµå¿¡ »õ ³ëµå¸¦ Ãß°¡ÇÕ´Ï´Ù.
+            // í˜„ìž¬ ë…¸ë“œì˜ next ë…¸ë“œì— ìƒˆ ë…¸ë“œë¥¼ ì¶”ê°€í•©ë‹ˆë‹¤.
             curNode->next = new ListNode(tempList->val);
             curNode = curNode->next;
 
-            // Ãß°¡ÇÑ ³ëµå´Â ´ÙÀ½ ³ëµå¸¦ °¡¸®Å°µµ·Ï ÇÕ´Ï´Ù.   
+            // ì¶”ê°€í•œ ë…¸ë“œëŠ” ë‹¤ìŒ ë…¸ë“œë¥¼ ê°€ë¦¬í‚¤ë„ë¡ í•©ë‹ˆë‹¤.   
             if (bFirst)
                 firstList = firstList->next;
             else
                 secondList = secondList->next;
         }
 
-        // ³ª¸ÓÁö ³ëµåµéÀ» º´ÇÕ½ÃÅµ´Ï´Ù.
+        // ë‚˜ë¨¸ì§€ ë…¸ë“œë“¤ì„ ë³‘í•©ì‹œí‚µë‹ˆë‹¤.
         tempList = (firstList == NULL) ? secondList : firstList;
         while (tempList != NULL) {
             curNode->next = new ListNode(tempList->val);
