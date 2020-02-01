@@ -1,4 +1,9 @@
 /*
+<<<<<<< HEAD
+=======
+    [Easy] 20.Valid Parentheses
+    -----------------------------------------------------------------------------------------------------------------------
+>>>>>>> 64ec1a41a743be28bc2427fb6ad41dbf467b00f6
     Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
     An input string is valid if:
@@ -27,6 +32,13 @@
     Example 5:
     Input: "{[]}"
     Output: true
+<<<<<<< HEAD
+=======
+    -----------------------------------------------------------------------------------------------------------------------
+    
+    - Detail
+    https://woo-dev.tistory.com/73
+>>>>>>> 64ec1a41a743be28bc2427fb6ad41dbf467b00f6
 */
 
 #include <string>
@@ -34,13 +46,19 @@
 
 using namespace std;
 
-class Solution {
+class Solution 
+{
 public:
+<<<<<<< HEAD
     bool isValid(string s) {
         /*
             스택을 이용하여 문자열의 크기만큼 루프를 돕니다.
             루프를 돌면서 각 문자를 스택에 push합니다.
         */
+=======
+    bool isValid(string s) 
+    {
+>>>>>>> 64ec1a41a743be28bc2427fb6ad41dbf467b00f6
 
         size_t sSize = s.size();
         if (sSize == 0)
