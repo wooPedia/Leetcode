@@ -9,6 +9,9 @@
     Output: 6
     Explanation: [4,-1,2,1] has the largest sum = 6.
     ---------------------------------------------------------------------------------------------------------------------------------------------
+  
+    - Detail
+    https://woo-dev.tistory.com/128
  */
 
 class Solution
@@ -19,7 +22,7 @@ public:
 
         size_t size = nums.size();
 
-        // °¢ ¿ä¼Ò´Â i¹øÂ° ¿ä¼Ò¸¦ ¸¶Áö¸·À¸·Î ÇÏ´Â ºÎºĞÇÕ Áß °¡Àå Å« ÇÕ
+        // ê° ìš”ì†ŒëŠ” ië²ˆì§¸ ìš”ì†Œë¥¼ ë§ˆì§€ë§‰ìœ¼ë¡œ í•˜ëŠ” ë¶€ë¶„í•© ì¤‘ ê°€ì¥ í° í•©
         // each element is a max of sum in subarrays which have a nums[i] as last element.
         // ex) subArrayMaxSum[2]: maximum in nums {[2], [1]+[2], [0]+[1]+[2]}
         std::vector<int> subArrayMaxSum;
